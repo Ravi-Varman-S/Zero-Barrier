@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Barrier - Job Platform for Everyone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Zero Barrier</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#jobs">Jobs</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#about">About</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Jobs Made <span class="highlight">Simple</span> For Everyone</h1>
+            <p>A job platform designed for low-tech workers. No smartphone needed. No internet required. Just simple SMS-based job matching.</p>
+            <div class="hero-buttons">
+                <a href="#jobs" class="btn btn-primary">Find Jobs</a>
+                <a href="#how-it-works" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>10,000+</h3>
+                    <p>Workers Helped</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Local Employers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Districts Covered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jobs" class="jobs-section">
+        <div class="container">
+            <h2 class="section-title">Available Jobs</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="construction">Construction</button>
+                <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+                <button class="filter-btn" data-filter="domestic">Domestic</button>
+                <button class="filter-btn" data-filter="delivery">Delivery</button>
+            </div>
+            <div class="jobs-grid" id="jobsGrid">
+                <!-- Jobs will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📱</div>
+                    <h3>Send SMS</h3>
+                    <p>Text "JOB" to 55555 from any basic phone. No smartphone needed.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">📋</div>
+                    <h3>Enter Details</h3>
+                    <p>Reply with your location and preferred work type via simple text messages.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">✅</div>
+                    <h3>Get Matched</h3>
+                    <p>Receive job matches near you within 24 hours via SMS.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">💼</div>
+                    <h3>Start Working</h3>
+                    <p>Contact the employer directly and start earning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Zero Barrier</h2>
+                    <p>We believe everyone deserves access to employment opportunities, regardless of their technology access. Zero Barrier bridges the digital divide by connecting low-tech workers with local employers through simple SMS technology.</p>
+                    <p>Our platform removes barriers like smartphone requirements, internet access, and digital literacy, making job searching accessible to everyone in rural and urban communities.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-icon">🆓</span>
+                            <span>100% Free for Workers</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">📱</span>
+                            <span>Works on Any Phone</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🌐</span>
+                            <span>No Internet Required</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🔒</span>
+                            <span>Safe & Secure</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-form">
+                    <h3>Register Now</h3>
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" placeholder="Enter your location" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="workType">Preferred Work</label>
+                            <select id="workType" required>
+                                <option value="">Select work type</option>
+                                <option value="construction">Construction</option>
+                                <option value="agriculture">Agriculture</option>
+                                <option value="domestic">Domestic Work</option>
+                                <option value="delivery">Delivery</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Register via SMS</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Zero Barrier</h3>
+                    <p>Bridging the digital divide in employment opportunities.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#jobs">Jobs</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 SMS: 55555</p>
+                    <p>📧 info@zerobarrier.in</p>
+                    <p>📍 Tamil Nadu, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zero Barrier. Made with ❤️ for low-tech workers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
