@@ -25,7 +25,7 @@ A job application platform designed specifically for low-tech workers, bridging 
 
 ## Live Demo
 
-[View Live Project](https://zero-barrier.vercel.app)
+[View Live Project](https://zero-barrier-six.vercel.app)
 
 ## Author
 
